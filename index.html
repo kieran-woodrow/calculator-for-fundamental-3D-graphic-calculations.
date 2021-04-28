@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assignment 1</title>
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous" /> -->
+   <link rel="stylesheet" href='skeleton.css' href='normalize.css'>
+</head>
+
+<body>
+   <form id="p1">
+      <h3>Calculate αX. </h3>
+      <label>This function will perform scalar multiplication on the vector.</label><br>
+      <label>Your scalar value.</label>
+      <input type="number" id="i4">
+      <label>Size of your vector.</label>
+      <input type="number" id="i1">
+      <input class="button-primary" id="s1" type="button" value="Generate vector">
+      <table id='vtable'></table>
+
+
+      <h3>Calculate X+Y.</h3>
+      <label>This function will perform vector addition. </label><br>
+      <label>How big is your first vector.</label>
+      <input type="number" id="i5">
+      <table id="vector1"> </table>
+      <label>How big is your second vector.</label>
+      <input type="number" id="i6">
+      <input class="button-primary" id="s2" type="button" value="Generate vectors">
+      <table id="vector2"> </table>
+
+      <h3>Calculate X-Y.</h3>
+      <label>This function will perform vector addition. </label><br>
+      <label>How big is your first vector.</label>
+      <input type="number" id="i7">
+      <table id="vector3"> </table>
+      <label>How big is your second vector.</label>
+      <input type="number" id="i8">
+      <input class="button-primary" id="s3" type="button" value="Generate vectors">
+      <table id="vector4"> </table>
+
+
+      <h3>Calculate X·Y.</h3>
+      <label> This function will compute the dot-product of the two vectors.</label><br>
+      <label>How big is your first vector.</label>
+      <input type="number" id="i9">
+      <table id="vector5"> </table>
+      <label>How big is your second vector.</label>
+      <input type="number" id="i10">
+      <input class="button-primary" id="s4" type="button" value="Generate vectors">
+      <table id="vector6"> </table>
+
+      <h3>Calculate ||x||2.</h3>
+      <label>This function will compute the Euclidean norm of a vector.</label><br>
+      <label>How big is your vector.</label>
+      <input type="number" id="i11">
+      <input class="button-primary" id="s117" type="button" value="Generate vectors">
+      <table id="vector7"> </table>
+
+      <h3>Calculate X×Y.</h3>
+      <label>This function will compute the cross-product of two vectors.</label><br>
+      <label>First vector.</label>
+      <input type="number" id="i23">
+      <input type="number" id="i24">
+      <input type="number" id="i25">
+      <label>Second vector.</label>
+      <input type="number" id="i26">
+      <input type="number" id="i27">
+      <input type="number" id="i28">
+      <br>
+      <input class="button-primary" id="s5" type="button" value="Calculate">
+      <table id="cross"></table>
+
+      <h3>Calculate αM.</h3>
+      <label>This function will perform scalar multiplication on the matrix.</label><br>
+      <label>Your scalar value.</label>
+      <input type="number" id="i31">
+      <label>How big is your matrix (nxm).</label>
+      <input type="number" id="i29"> x
+      <input type="number" id="i30">
+      <input class="button-primary" id="s6" type="button" value="Generate matrix">
+      <table id="table" class="table"></table>
+
+      <h3>Calculate M^T.</h3>
+      <label>This function will transpose a matrix.</label><br>
+      <label>How big is your matrix (nxm).</label>
+      <input type="number" id="i32"> x
+      <input type="number" id="i33">
+      <input class="button-primary" id="s8" type="button" value="Generate matrix">
+      <table id="table2" class="table2"></table>
+
+      <h3>Calculate Mx.</h3>
+      <label>This function will perform vector-matrix multiplication. </label><br>
+      <label>How big is your coloumn vector.</label>
+      <input type="number" id="i36"><br>
+      <table id='vectort'> </table>
+      <label>How big is your matrix (nxm).</label>
+      <input type="number" id="i34"> x
+      <input type="number" id="i35">
+      <input class="button-primary" id="s10" type="button" value="Generate matrix">
+      <table id="matrixTable"> </table>
+
+      <h3>Calculate MG (Matricies multiplication).</h3>
+      <label>This function will perform matrix-matrix multiplication. </label><br>
+      <label>How big is your first matrix (nxm).</label>
+      <input type="number" id="i39"> x
+      <input type="number" id="i40">
+      <table id="matrixtable1"> </table>
+      <label>How big is your second matrix (nxm).</label>
+      <input type="number" id="i41"> x
+      <input type="number" id="i42">
+      <input class="button-primary" id="s12" type="button" value="Generate matricies">
+      <table id="matrixtable2"> </table>
+
+      <h3>Calculate the determinant of a matrix.</h3>
+      <label>This function will compute the determinant of a matrix. </label><br>
+      <label>How big is your matrix.</label>
+      <input type="number" id="i43">
+      <input class="button-primary" id="s14" type="button" value="Generate determinant">
+      <table id="determinanttable"> </table>
+
+      <h3>Solve the system of equations.</h3>
+      <label>This function will solve the system of equation using Gauss elimination.</label><br>
+      <label>How big is your matrix.</label>
+      <input type="number" id="i300"> x
+      <input type="number" id="i301">
+      <table id="gausstable"> </table>
+      <label>How many solutions do you have.</label>
+      <input type="number" id="i302">
+      <input class="button-primary" id="s300" type="button" value="Generate matrix">
+      <table id="solutionstable"> </table>
+
+      <h3>Determine if an enemy is behind or infront of the character.</h3>
+      <label>Vector P is the location vector of the character. Vector D is the direction in which the character is
+         looking in. Vector E is the location vector of the enemy.</label>
+      <br>
+      <label>Is your system a left handed system or right handed system.</label>
+      <label>Please enter the P vector (character vector).</label>
+      <input type="number" id="pv1">
+      <input type="number" id="pv2">
+      <input type="number" id="pv3">
+      <label>Please enter the D vector (directional vector).</label>
+      <input type="number" id="dv1">
+      <input type="number" id="dv2">
+      <input type="number" id="dv3">
+      <label>Please enter the E vector (enemy vector).</label>
+      <input type="number" id="ev1">
+      <input type="number" id="ev2">
+      <input type="number" id="ev3">
+      <input class="button-primary" id="s120" type="button" value="Generate answer">
+      <h3 id="position"> </h3>
+
+      <h3>Determine if an enemy is to the left or to the right of the character.</h3>
+      <label>Vector P is the location vector of the character. Vector D is the direction in which the character is
+         looking in.
+         Vector U
+         is the up vector. Vector E is the location vector of the enemy.</label>
+      <br>
+      <h5>Please select a system. The default system is the right-handed system.</h5>
+      <label for="male">Left-handed system.</label>
+      <input type="radio" id="left" value="left handed system" name='radio'>
+      <label for="male">Right-handed system.</label>
+      <input type="radio" id="right" value="right handed system" name='radio'><br><br>
+      <label>Please enter the P vector (character vector).</label>
+      <input type="number" id="pv11">
+      <input type="number" id="pv22">
+      <input type="number" id="pv33">
+      <label>Please enter the D vector (directional vector).</label>
+      <input type="number" id="dv11">
+      <input type="number" id="dv22">
+      <input type="number" id="dv33">
+      <label>Please enter the U vector (up vector).</label>
+      <input type="number" id="uv11">
+      <input type="number" id="uv22">
+      <input type="number" id="uv33">
+      <label>Please enter the E vector (enemy vector).</label>
+      <input type="number" id="ev11">
+      <input type="number" id="ev22">
+      <input type="number" id="ev33">
+      <input class="button-primary" id="s121" type="button" value="Generate answer">
+      <h3 id="position2"> </h3>
+
+
+   </form>
+
+   </div>
+</body>
+<script src="calculations.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+
+</html>
