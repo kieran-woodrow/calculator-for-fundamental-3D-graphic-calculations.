@@ -55,10 +55,8 @@ Use any browser. I prefer Chrome.
 
 ## 📷 Screenshots
 
-![search]()
+![scalar vector](https://github.com/kieran-woodrow/calculator-for-fundamental-3D-graphic-calculations./blob/main/Assets/Screenshot%202024-06-05%20at%2013.36.41.png)
 
-![search]()
+![character position]()
 
-![search]()
-
-
+![search](https://github.com/kieran-woodrow/calculator-for-fundamental-3D-graphic-calculations./blob/main/Assets/Screenshot%202024-06-05%20at%2013.37.29.png)
